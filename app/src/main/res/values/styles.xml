@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextLabel" parent="Theme.AppCompat.Light">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">#666666</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">#666666</item>
+        <item name="colorControlNormal">#9c9c9c</item>
+        <item name="colorControlActivated">#666666</item>
+        <item name="colorControlHighlight">#9c9c9c</item>
+        <!--<item name="android:textCursorDrawable">@drawable/edittext_cursor_color</item>-->
+        <item name="android:textSize">@dimen/txt_16</item>
+
+    </style>
+</resources>
