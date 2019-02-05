@@ -9,4 +9,11 @@
     <string name="customer_details">Customer Details</string>
     <string name="report">Report</string>
     <string name="save">Save</string>
+    <string name="email_id">Email ID</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="city">City</string>
+    <string name="generate_invoice">Generate Invoice</string>
+    <string name="customer_name">Customer Name:</string>
+    <string name="stock_report">Stock Report</string>
+    <string name="billing_report">Billing Report</string>
 </resources>

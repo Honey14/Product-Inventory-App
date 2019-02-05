@@ -7,8 +7,8 @@
     <fragment
         android:id="@+id/homeFragment2"
         android:name="com.myinventory.UI.fragments.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        android:label="Inventory"
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment2_to_addProductFragment"
             app:destination="@id/addProductFragment" />
@@ -28,26 +28,26 @@
     <fragment
         android:id="@+id/addProductFragment"
         android:name="com.myinventory.UI.fragments.AddProductFragment"
-        android:label="fragment_add_product"
+        android:label="Add Product"
         tools:layout="@layout/fragment_add_product" />
     <fragment
         android:id="@+id/viewEditFragment"
         android:name="com.myinventory.UI.fragments.ViewEditFragment"
-        android:label="fragment_view_edit"
+        android:label="View Products"
         tools:layout="@layout/fragment_view_edit" />
     <fragment
         android:id="@+id/invoiceFragment"
         android:name="com.myinventory.UI.fragments.InvoiceFragment"
-        android:label="fragment_invoice"
+        android:label="Invoice"
         tools:layout="@layout/fragment_invoice" />
     <fragment
         android:id="@+id/customerDetailsFragment"
         android:name="com.myinventory.UI.fragments.CustomerDetailsFragment"
-        android:label="fragment_customer_details"
+        android:label="Customer Details"
         tools:layout="@layout/fragment_customer_details" />
     <fragment
         android:id="@+id/reportFragment"
         android:name="com.myinventory.UI.fragments.ReportFragment"
-        android:label="fragment_report"
+        android:label="Report"
         tools:layout="@layout/fragment_report" />
 </navigation>

@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="dimen_2">2dp</dimen>
     <dimen name="dimen_8">8dp</dimen>
     <dimen name="dimen_10">10dp</dimen>
     <dimen name="dimen_5">5dp</dimen>
     <dimen name="dimen_15">15dp</dimen>
+    <dimen name="dimen_18">18dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
 
 
 
@@ -11,4 +15,5 @@
     <dimen name="txt_2">2sp</dimen>
     <dimen name="txt_16">16sp</dimen>
     <dimen name="txt_12">12sp</dimen>
+    <dimen name="txt_18">18sp</dimen>
 </resources>

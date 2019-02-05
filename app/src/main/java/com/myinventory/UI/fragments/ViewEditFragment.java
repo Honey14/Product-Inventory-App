@@ -10,6 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.myinventory.R;
+import com.myinventory.UI.adapters.EditViewAdapter;
+import com.myinventory.database.DatabaseHelper;
+import com.myinventory.model.Product;
+
+import java.util.ArrayList;
 
 
 /**
@@ -17,6 +22,7 @@ import com.myinventory.R;
  */
 public class ViewEditFragment extends Fragment {
     RecyclerView recyclerView_edit;
+    DatabaseHelper helper1;
 
     public ViewEditFragment() {
         // Required empty public constructor
@@ -31,7 +37,10 @@ public class ViewEditFragment extends Fragment {
         recyclerView_edit = view.findViewById(R.id.recyclerView_edit);
         RecyclerView.LayoutManager manager = new LinearLayoutManager(getContext());
         recyclerView_edit.setLayoutManager(manager);
-//        recyclerView_edit.setAdapter();
+        helper1 = new DatabaseHelper(getContext());
+        ArrayList<Product> productsListRetrieved = helper1.retrieveProduct();
+        EditViewAdapter editViewAdapter = new EditViewAdapter(getActivity(), productsListRetrieved);
+        recyclerView_edit.setAdapter(editViewAdapter);
         return view;
     }
 

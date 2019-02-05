@@ -1,14 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   >
+    android:background="@color/grey"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
-  <android.support.v7.widget.RecyclerView
-      android:id="@+id/recyclerView_edit"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:orientation="horizontal">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="SR."
+            android:gravity="center"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/txt_18" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Product Name"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/txt_18" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_grey" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_5" />
+
+</LinearLayout>

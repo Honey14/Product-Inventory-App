@@ -1,14 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReportFragment">
+    android:layout_marginStart="@dimen/dimen_10">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/repo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
 
-</FrameLayout>
+        <Button
+            android:id="@+id/button_stock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/dimen_10"
+            android:text="@string/stock_report"
+            android:textAllCaps="false"
+            android:textSize="@dimen/txt_18" />
+
+        <ImageView
+            android:id="@+id/img_load_report"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_download" />
+
+        <ImageView
+            android:id="@+id/img_view_report"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_view" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repo"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_billing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/dimen_10"
+            android:text="@string/billing_report"
+            android:textAllCaps="false"
+            android:textSize="@dimen/txt_18" />
+
+        <ImageView
+            android:id="@+id/img_load_bill"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_download" />
+
+        <ImageView
+            android:id="@+id/img_view_bill"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_view" />
+    </LinearLayout>
+
+
+</RelativeLayout>

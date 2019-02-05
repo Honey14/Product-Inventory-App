@@ -20,7 +20,8 @@ import androidx.navigation.Navigation;
  */
 public class HomeFragment extends Fragment {
 
-ImageView image_addProduct;
+    ImageView image_addProduct, image_edit, image_invoice, image_customerDetails, image_report;
+
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -32,6 +33,10 @@ ImageView image_addProduct;
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         image_addProduct = view.findViewById(R.id.image_addProduct);
+        image_edit = view.findViewById(R.id.image_edit);
+        image_invoice = view.findViewById(R.id.image_invoice);
+        image_customerDetails = view.findViewById(R.id.image_customerDetails);
+        image_report = view.findViewById(R.id.image_report);
 
         return view;
     }
@@ -40,5 +45,9 @@ ImageView image_addProduct;
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         image_addProduct.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_homeFragment2_to_addProductFragment));
+        image_edit.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_homeFragment2_to_viewEditFragment));
+        image_invoice.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_homeFragment2_to_invoiceFragment));
+        image_customerDetails.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_homeFragment2_to_customerDetailsFragment));
+        image_report.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_homeFragment2_to_reportFragment));
     }
 }
